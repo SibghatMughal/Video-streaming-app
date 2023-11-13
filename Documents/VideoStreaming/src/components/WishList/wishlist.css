@@ -1,0 +1,155 @@
+.wishlist-section{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.title{
+    color: rgba(214, 47, 127, 1);
+    font-weight: 600;
+    font-size: 26px;
+}
+.btn{
+    color: rgba(214, 47, 127, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.grid-heading{
+    font-size: 20;
+    font-weight: 600;
+    color: rgba(102, 112, 133, 1);
+}
+
+
+/* vote section styling  */
+.vote-section{
+    border: 1px solid rgba(234, 236, 240, 1);
+    padding: 16px;
+    border-radius: 16px;
+    height: auto;
+    position: relative;
+}
+
+.voted{
+    margin-top: 5px;
+    height: 250px;
+    position: relative;
+    z-index: 9999;
+    overflow-y: scroll; /* Enable vertical scrollbar */
+    scrollbar-width: thin; /* Hide the scrollbar in Firefox */
+    scrollbar-color: transparent transparent; /* Hide the scrollbar in Webkit-based browsers */
+}
+.peoples {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    color: rgba(102, 112, 133, 1);
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  /* For Webkit-based browsers (Chrome, Safari) */
+  .voted::-webkit-scrollbar {
+    width: 0; /* Set the width of the scrollbar to zero */
+  }
+  
+  /* For Firefox */
+  .voted::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb */
+  }
+  
+.peoples .name{
+    font-size: 14px;
+    font-weight: 500;
+}
+.peoples .text{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.vote-btn{
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    padding: 6px 12px;
+    width: 100%;
+    z-index: 99999;
+
+}
+
+
+
+.user-section {
+    max-height: 500px;
+    position: relative;
+    z-index: 9999;
+    overflow-y: scroll; /* Enable vertical scrollbar */
+    scrollbar-width: thin; /* Hide the scrollbar in Firefox */
+    scrollbar-color: transparent transparent; /* Hide the scrollbar in Webkit-based browsers */
+    padding: 8px; 
+    scrollbar-width: thin;
+    width: 100%;
+  }
+
+  .user-section::-webkit-scrollbar {
+    width: 0; /* Set the width of the scrollbar to zero */
+  }
+  
+  /* For Firefox */
+  .user-section::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Hide the thumb */
+  }
+
+
+  /* wishlist grid footer button  */
+    /* user footer section styling  */
+    .user-footer{
+        height: auto;
+        background-color: rgb(255, 253, 253);
+        width: 100%;
+        padding: 24px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        bottom: 0;
+        z-index: 99999;
+      }
+    
+      .user-footer input{
+        color:rgba(208, 213, 221, 1);
+        border: 1px solid rgba(208, 213, 221, 1);
+        border-radius: 64px;
+        padding: 12px;
+        width: 100%;
+      }
+      .user-footer input:focus{
+        outline: lightgray;
+        color: black;
+      }
+
+      .footer-btn{
+       color:white;
+       font-family: inter;
+       background-color: #D62F7F;
+       border-radius: 50%;
+       width: 65px;
+       height: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer;
+      }
+      .footer-btn:hover{
+        background-color: white;
+        color: #D62F7F;
+        border: 1px solid #D62F7F;
+      }

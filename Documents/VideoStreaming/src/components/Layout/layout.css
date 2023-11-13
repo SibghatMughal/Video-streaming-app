@@ -1,0 +1,47 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  flex: 0 0 auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* Set a higher z-index for the header */
+  /* Add your header styles here */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 270px; /* Set the width of your sidebar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99999; /* Set a higher z-index for the sidebar */
+  /* Add your sidebar styles here */
+}
+
+.main {
+  flex: 1;
+  padding-left: 270px; /* Adjust padding to accommodate the sidebar width */
+  margin-top: 69px;
+  /* Add your main section styles here */
+  overflow-y: auto; /* Allow main content to scroll if needed */
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .main {
+    padding-left: 0;
+    margin-top: 140px;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,11 @@
+.border{
+    border-bottom:1px solid #EAECF0 !important;
+}
+
+
+
+@media (max-width:900px){
+    .border{
+        border-bottom: 1px solid transparent;
+    }
+}
